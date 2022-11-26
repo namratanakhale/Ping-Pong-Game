@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ping pong</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./start.js"></script>
+</head>
+<style>
+     body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+</style>
+<body>
+
+    <div id="instructions-multi">
+        <h3>Instructions:</h3>
+       <ol>
+        <li>Use keyboard left-key to move paddle left & right key to move paddle right also you can use 
+            left-arrow and right-arrow to move the paddle of user-1.
+        </li>
+        <li>Use left-arrow & right-arrow to move the paddle of user-2.</li>
+        <li>If the score of user-1 or user-2 is greater than 4 then Game will gets Over.</li>
+        <li>If miss the ball from user-1 side then user-2 will get points and vice-versa.</li>
+        <li>If collision occurs between ball and paddle the speed of ball gets increases.</li>
+       </ol>
+    </div>
+    <!-- <span class="player1">Player 1</span> -->
+    <!-- <span class="player2">Player 2</span> -->
+
+    <div id="can">
+        <canvas id="myGame" width="400" height="600"></canvas>
+    </div>
+
+
+    <div id="result">
+        <h1 id="win">Game over</h1>
+        <button id="btn" onclick="location.reload()">Restart</button>
+        <button id="quitbtn" onclick="quit()"><a href="./index.html">Quit</a></button>
+    </div>
+
+    <div class="buttons" id="buttons">
+        <button id="left-com"><img src="./left.png" alt=""></button>
+        <button id="right-com"><img src="./right.png" alt=""></button>
+        <button id="left-user"><img src="./left.png" alt=""></button>
+        <button id="right-user"><img src="./right.png" alt=""></button>
+
+    </div>
+    
+
+    <script src="./multi.js"></script>
+</body>
+</html>
